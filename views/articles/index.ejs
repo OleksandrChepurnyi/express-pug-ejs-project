@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Articles (EJS)</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1>Articles (EJS)</h1>
+        <nav>
+          <a href="/">Home</a> · <a href="/users">Users</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <ul class="article-list">
+        <% articles.forEach(function(article){ %>
+          <li class="article-item">
+            <a href="/articles/<%= article.id %>">
+              <h3><%= article.title %></h3>
+              <p class="summary"><%= article.summary %></p>
+            </a>
+          </li>
+        <% }) %>
+      </ul>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© Project demo</div>
+    </footer>
+  </body>
+</html>

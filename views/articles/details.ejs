@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%= article.title %></title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1><%= article.title %></h1>
+        <nav>
+          <a href="/articles">← Back to articles</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <article>
+        <p><%= article.content %></p>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© Project demo</div>
+    </footer>
+  </body>
+</html>

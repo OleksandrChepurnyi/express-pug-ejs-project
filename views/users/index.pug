@@ -1,0 +1,10 @@
+extends ../layout.pug
+
+block content
+  h2 Users (PUG)
+  ul.user-list
+    each user in users
+      li.user-item
+        a(href=`/users/${user.id}`)
+          .user-name #{user.name}
+          span.user-role &nbsp;— #{user.role}

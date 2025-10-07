@@ -1,0 +1,22 @@
+doctype html
+html(lang="uk")
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title= title || 'Express App'
+    link(rel='stylesheet', href='/styles.css')
+  body
+    header.header
+      .container
+        h1.header__title Express • PUG + EJS demo
+        nav
+          a(href='/') Home
+          |  ·
+          a(href='/users') Users
+          |  ·
+          a(href='/articles') Articles
+    main.container
+      block content
+    footer.footer
+      .container
+        p © Project demo

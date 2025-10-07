@@ -1,0 +1,14 @@
+extends ../layout.pug
+
+block content
+  h2 User details
+  .user-card
+    h3 #{user.name}
+    p
+      strong Role: 
+      | #{user.role}
+    p
+      strong Email: 
+      | #{user.email}
+    p
+      a(href='/users') ← Back to users
