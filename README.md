@@ -2,7 +2,7 @@
 npm install
 ```
 
-2. Запуск:
+Запуск:
 
 ```bash
 npm start
